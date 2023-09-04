@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Something</title>
+    <style>
+        /* Additional styling for the "No" button */
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Gap between buttons */
+        }
+        .no-button {
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Styling for the footer text */
+        .footer {
+            position: fixed;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px; /* Adjust the font size */
+        }
+    </style>
+</head>
+<body>
+    <div class="greetings">
+        <span>D</span>
+        <span>O</span>
+        <span>Y</span>
+        <span>O</span>
+        <span>U</span>
+        <span>W</span>
+        <span>A</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>H</span>
+        <span>E</span>
+        <span>A</span>
+        <span>R</span>
+        <span>T</span>
+        <span>?</span>
+    </div>
+    <div class="description">
+        <span>Click the button below</span>
+    </div>
+    <div class="button">
+        <button>
+            <a href="love.html">Yes</a>
+        </button>
+        <button class="no-button" onclick="moveNoButton()">
+            <a>No</a>
+        </button>
+    </div>
+    
+    <script>
+        function moveNoButton() {
+            const noButton = document.querySelector('.no-button');
+            const randomX = Math.random() * 200 - 25; // Random value between -15 and 15
+            const randomY = Math.random() * 200 - 25; // Random value between -15 and 15
+            noButton.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        }
+    </script>
+
+    <div class="footer">
+        <span>&copy;JosuaLimbu</span>
+    </div>
+</body>
+</html>
