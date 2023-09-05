@@ -2,6 +2,27 @@
 *{
     font-family: 'Poppins',cursive;
 }
+
+ /* Additional styling for the "No" button */
+ .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Gap between buttons */
+}
+.no-button {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for the footer text */
+.footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px; /* Adjust the font size */
+}
 body{
     color: azure;
     width: 100%;

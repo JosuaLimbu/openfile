@@ -4,29 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Something</title>
     <style>
-        /* Additional styling for the "No" button */
-        .button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px; /* Gap between buttons */
-        }
-        .no-button {
-            position: relative;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        /* Styling for the footer text */
-        .footer {
-            position: fixed;
-            bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 10px; /* Adjust the font size */
-        }
+       
     </style>
 </head>
 <body>
@@ -59,15 +40,7 @@
             <a>No</a>
         </button>
     </div>
-    
-    <script>
-        function moveNoButton() {
-            const noButton = document.querySelector('.no-button');
-            const randomX = Math.random() * 200 - 25; // Random value between -15 and 15
-            const randomY = Math.random() * 200 - 25; // Random value between -15 and 15
-            noButton.style.transform = `translate(${randomX}px, ${randomY}px)`;
-        }
-    </script>
+    <script src="js/main.js"></script>
 
     <div class="footer">
         <span>&copy;JosuaLimbu</span>
